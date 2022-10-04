@@ -1,0 +1,417 @@
+@import url('https://css.gg/css');
+
+.Login .leftBG {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 38.5%;
+    background: var(--secondary);
+}
+
+.Login {
+    position: relative;
+}
+
+.Login i {
+    transition: all 0.3s ease;
+}
+
+.Login i:hover {
+    transform: scale(1.1);
+}
+
+.Login .qrBox {
+    position: absolute;
+    z-index: 100;
+    width: 400px;
+    height: 700px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 38px 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+}
+
+.Login .qrBox img {
+    width: 370px;
+    height: 320px;
+    margin-bottom: 39px;
+}
+
+.Login .qrBox .line {
+    width: 60%;
+    height: 0px;
+    border: 1px solid var(--secondary);
+    margin: 0 auto 35.25px auto;
+}
+
+.Login .qrBox .scan {
+    margin: 0 auto 25.25px auto;
+    cursor: pointer;
+}
+
+.Login .qrBox .scanQr {
+    width: 200px;
+    height: 15px;
+    margin: 0 auto 34px auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+.Login .qrBox .trouble {
+    width: 200px;
+    height: 15px;
+    margin: 0 auto 5px auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+.Login .qrBox button {
+    width: 205px;
+    height: 48px;
+    background: var(--primary);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 45px;
+    color: var(--secondary);
+    margin-bottom: 66.49px;
+}
+
+.Login .qrBox .close {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.Login .modalBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: inherit;
+  height: 776px;
+  width: 1156px;
+  z-index: 12;
+}
+
+.Login .modalBox .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.Login .modalBox .content .left {
+    position: relative;
+    display: flex;
+    width: 356px;
+    height: 776px;
+    background: #0E1D26;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 30px 0px 0px 30px;
+    color: white;
+}
+
+.Login .modalBox .content .left .message {
+    position: absolute;
+    width: 220px;
+    height: 148px;
+    top: 512px;
+    left: 69px;
+}
+
+.Login .modalBox .content .left button {
+    background-color: var(--primary);
+    color: var(--secondary);
+    height: 48px;
+    width: 157px;
+    position: absolute;
+    top: 653px;
+    left: 69px;
+    border-radius: 12px;
+}
+
+.Login .modalBox .content .left button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 45px;
+}
+
+.Login .modalBox .content .left .message p {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.Login .modalBox .content .left .message h1 {
+    font-weight: 600;
+}
+
+.Login .modalBox .content .left img {
+    height: 42px;
+    width: 160px;
+    object-fit: cover;
+    position: absolute;
+    top: 68px;
+    left: 39px;
+}
+
+.Login .right .close {
+    position: absolute;
+    right: 4%;
+    top: 3%;
+    cursor: pointer;
+}
+
+.Login .modalBox .content .right {
+    position: relative;
+    width: 800px;
+    height: 776px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 0px 30px 30px 0px;
+}
+
+.Login form input[type=radio] {
+    accent-color: var(--secondary);
+}
+
+.Login .modalBox .content .right h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    position: absolute;
+    top: 89px;
+    left: 182px;
+    color: var(--secondary);
+}
+
+.Login .modalBox .content .right p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    color: var(--secondary);
+    position: absolute;
+    top: 155px;
+    left: 182px;
+}
+
+.Login form .radio {
+    display: flex;
+    gap: 27px;
+    position: absolute;
+    top: 223px;
+    left: 304px;
+}
+
+.Login form .radio label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.Login form .radio input {
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+}
+
+.Login form .radio .inner-radio {
+    display: flex;
+    gap: 8px;
+}
+
+.Login form .form-design .form-input input {
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 12px;
+    width: 435px;
+    height: 44px;
+    padding: 0px 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.Login form .user {
+    position: absolute;
+    top: 260px;
+    left: 182px;
+}
+
+.Login form .password {
+    position: absolute;
+    top: 345px;
+    left: 182px;
+}
+
+.Login form .password .form-input input {
+    padding-right: 50px;
+    border-radius: 12px;
+}
+
+.Login form .form-design label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.Login form .form-design .form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Login form .other {
+    display: flex;
+    gap: 78px;
+}
+
+.Login form .other .remember-me {
+    position: absolute;
+    top: 434px;
+    left: 220px;
+    display: flex;
+    gap: 8px;
+}
+
+.Login form .other .remember-me input {
+    cursor: pointer;
+    accent-color: var(--secondary);
+}
+
+.Login form .other .remember-me label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.Login form .other .forgot-pass {
+    position: absolute;
+    top: 430px;
+    left: 427px;
+}
+
+.Login form .other .forgot-pass a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    text-decoration: none;
+    color: var(--secondary);
+    text-align: center;
+}
+
+.Login form .login {
+    background: #F3FF2D;
+    border-radius: 12px;
+    width: 93px;
+    height: 48px;
+    position: absolute;
+    top: 473px;
+    left: 353px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 45px;
+    color: var(--secondary);
+}
+
+.Login form .qr {
+    background: #F3FF2D;
+    border-radius: 12px;
+    width: 192px;
+    height: 48px;
+    position: absolute;
+    top: 592px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 45px;
+    color: var(--secondary);
+    left: 304px;
+}
+
+.Login form .divider {
+    display: flex;
+    gap: 10px;
+    left: 220px;
+    top: 538px;
+    position: absolute;
+    align-items: center;
+}
+
+.Login form .divider .message {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 55px;
+}
+
+.Login form .divider .line {
+    width: 164px;
+    height: 0px;
+    border: 1px solid var(--secondary);
+}
+
+.Login form .statement {
+    width: 247px;
+    height: 30px;
+    color: var(--secondary);
+    top: 658px;
+    left: 276px;
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.Login .right .password-eye {
+    cursor: pointer;
+    position: absolute;
+    top: 380px;
+    left: 587.25px;
+    z-index: 2;
+}
+
+.Login .right .notFound {
+    position: absolute;
+    color: var(--error);
+    font-weight: 700;
+    font-size: 48px;
+    top: 20px;
+    left: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+.input-error {
+    border: 2px solid var(--error);
+}
+
+.Login .right .notFoundNotSet {
+    position: absolute;
+    opacity: 0;
+}

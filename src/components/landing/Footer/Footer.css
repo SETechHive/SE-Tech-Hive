@@ -1,0 +1,105 @@
+section.Footer {
+    background-color: var(--secondary);
+    min-height: 40vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+section.Footer .wrapper {
+    background-color: var(--primary);
+    color:var(--secondary);
+    padding: 5rem 10rem;
+    height: 35vh;
+    width: 100%;
+}
+
+section.Footer .wrapper .box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.Footer .wrapper .box1 .links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+section.Footer .wrapper .box1 .links h3 {
+    letter-spacing: 1px;
+}
+
+section.Footer .wrapper .box1 .last-part img {
+    width: 200px;
+    transform: translate(12rem, 0);
+}
+
+section.Footer .wrapper .box1 .links .clickable-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+section.Footer .wrapper .box2 {
+    transform: translateY(-65px);
+}
+
+section.Footer .wrapper .box1 .links .clickable-links a {
+    text-decoration: none;
+    color:var(--secondary);
+    transition: all 0.1s;
+}
+
+section.Footer .wrapper .box1 .links .clickable-links span,
+section.Footer .wrapper .box2 .fa-brands {
+    transition: all 0.1s;
+}
+
+section.Footer .wrapper .box1 .links .clickable-links span:hover,
+section.Footer .wrapper .box2 .fa-brands:hover {
+    transform: scale(1.1);
+}
+
+section.Footer .wrapper .box1 .links .clickable-links a:hover {
+    transform: scale(1.1);
+}
+
+section.Footer .wrapper .box1 .last-part {
+    max-width: 450px;
+}
+
+section.Footer .wrapper .box1 .last-part img {
+    margin-bottom: 1.2rem;
+}
+
+section.Footer .wrapper .box2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5rem;
+}
+
+section.Footer .wrapper .box2 :not(:last-child) {
+    margin-right: 2rem;
+}
+
+section.Footer .finale {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+    gap: 10rem;
+    padding-top: 20px;
+}
+
+section.Footer .finale a {
+    text-decoration: none;
+    color: white;
+}

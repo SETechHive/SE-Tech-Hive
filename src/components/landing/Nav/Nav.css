@@ -1,0 +1,78 @@
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+}
+
+header .logo {
+    position: relative;
+    height: 100px;
+    cursor: pointer;
+    top: 10px;
+}
+
+header .navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+    transition-property: background;
+    position: relative;
+}
+
+header .navigation a::before {
+    content: ""; 
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    bottom: -10%;
+    left: 20%;
+    background-color: var(--primary);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s; 
+    transition: all 0.3s ease-in-out 0s; 
+}
+
+header .navigation a:hover {
+    color: var(--primary);
+}
+
+header .navigation a:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+header .buttons button {
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 7px 25px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.4s ease-in-out;
+}
+
+header .buttons button:hover {
+    transform: scale(1.1);
+}
+
+header .buttons .signin {
+    margin-left: 10px;
+    background-color: var(--primary);
+}
+
+header .navigation a:not(:last-child) {
+    margin-right: 30px;
+}

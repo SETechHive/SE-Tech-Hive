@@ -1,0 +1,175 @@
+section.content {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+}
+
+section.content .details .logo {
+    width: 200px;
+}
+
+section.content .details {
+    max-width: 80%;
+    margin: 7vh 10% 7vh 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: var(--primary);
+    padding: 3% 10%;
+    box-shadow: -3px 5px 5px 1px rgba(0,0,0,0.4);
+}
+
+section.content .details .desc {
+    margin-left: 10%;
+}
+
+section.content .details .desc h2 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 1.5%;
+    letter-spacing: 2px;
+}
+
+section.content .details .desc button {
+    border-radius: 7px;
+    border: 0px solid;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+section.content .details .desc {
+    margin-top: -2%;
+}
+
+section.content .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+
+section.content .contact .box-1 {
+    box-shadow: -3px 10px 33px 0px rgba(0,0,0,0.75);
+    border-radius: 25px;
+    padding: 10px 50px;
+    height: 50vh;
+    color: white;
+    max-width: 450px;
+    margin-left: 12rem;
+    flex: 1 1 0;
+}
+
+section.content .contact .box-1 .header{
+    margin-top: 2rem;
+}
+
+section.content .contact .box-1 .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap !important;
+}
+
+section.content .contact .box-1 #email{
+    margin-top: 3.2rem;
+}
+
+section.content .contact .box-1 .row {
+    margin-top: 2.2rem;
+}
+
+section.content .contact .box-1 .row h3 {
+    margin-left: 1rem;
+}
+
+section.content .contact .box-1 .row p {
+    margin-left: 0.5rem;
+}
+section.content .contact .box-1 img {
+    width: 60px;
+    height: 40px;
+}
+
+section.content .contact .box-1 h2 {
+    font-size: 40px;
+}
+
+section.content .contact .box-2 {
+    box-shadow: -3px 10px 33px 0px rgba(0,0,0,0.75);
+    border-radius: 25px;
+    padding: 10px 50px;
+    height: 50vh;
+    color: white;
+    width: 100%;
+    margin-right: 12rem;
+    flex: 2 1 0;
+    display: flex;
+    align-items:  flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+section.content .contact .box-2 div:not(:last-child) {
+    margin-top: 1rem;
+}
+section.content .contact .box-2 .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+section.content .contact .box-2 .header img {
+    width: 155px;
+    height: 100%;
+    margin-left: 150px;
+}
+
+section.content .contact .box-2 .header h2 {
+    font-size: 35px;
+}
+
+section.content .contact .box-2 .inputs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    transform: translate(0, -20px);
+}
+
+section.content .contact .box-2 .inputs input:not(:last-child){
+    border-radius: 15px;
+    height: 2.3rem;
+    width: 650px;
+    max-width: 1250px;
+    padding: 0 2rem;
+    font-weight: 300;
+}
+
+section.content .contact .box-2 .inputs .last-part {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+section.content .contact .box-2 .inputs .last-part textarea {
+    padding: 1rem 2rem;
+    width: 650px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+section.content .contact .box-2 .inputs .last-part input {
+    border-radius: 15px;
+    padding: 10px 35px;
+    margin-top: 150px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-weight: bold;
+}
